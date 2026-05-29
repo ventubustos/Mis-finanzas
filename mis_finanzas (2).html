@@ -126,7 +126,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);min-height:100vh;paddin
       <button class="step-btn" onclick="cambiarClases(1)">+</button>
     </div>
   </div>
-  <p class="clases-total" id="clases-detalle">0 clases × $25.000 = <strong>$0</strong></p>
+  <p class="clases-total" id="clases-detalle">0 clases × $27.000 = <strong>$0</strong></p>
 </div>
 <div class="metas-grid" id="metas-grid"></div>
 <div class="tab-bar">
@@ -262,7 +262,7 @@ function cargarDatos() {
       document.getElementById('clases-num').textContent = numClases;
       const t = C();
       document.getElementById('clases-display').value = t ? fmt(t) : '';
-      document.getElementById('clases-detalle').innerHTML = numClases + ' clases × $25.000 = <strong>' + fmt(t) + '</strong>';
+      document.getElementById('clases-detalle').innerHTML = numClases + ' clases × $27.000 = <strong>' + fmt(t) + '</strong>';
     }
     if (data.ultimaGuardado) {
       const fecha = new Date(data.ultimaGuardado);
@@ -278,7 +278,7 @@ function resetearMes() {
   document.getElementById('sueldo').value = '';
   document.getElementById('clases-num').textContent = '0';
   document.getElementById('clases-display').value = '';
-  document.getElementById('clases-detalle').innerHTML = '0 clases × $25.000 = <strong>$0</strong>';
+  document.getElementById('clases-detalle').innerHTML = '0 clases × $27.000 = <strong>$0</strong>';
   document.getElementById('page-sub').textContent = 'Mes actual';
   guardar();
   recalc();
@@ -290,7 +290,7 @@ function cambiarClases(d) {
   document.getElementById('clases-num').textContent = numClases;
   const t = C();
   document.getElementById('clases-display').value = t ? fmt(t) : '';
-  document.getElementById('clases-detalle').innerHTML = numClases + ' clases × $25.000 = <strong>' + fmt(t) + '</strong>';
+  document.getElementById('clases-detalle').innerHTML = numClases + ' clases × $27.000 = <strong>' + fmt(t) + '</strong>';
   guardar(); recalc();
 }
 
